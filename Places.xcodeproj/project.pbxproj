@@ -12,6 +12,13 @@
 		2D783E112AAE4D320023B9D9 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D783E102AAE4D320023B9D9 /* LocationsViewModel.swift */; };
 		2D783E132AAE4D7A0023B9D9 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D783E122AAE4D7A0023B9D9 /* LocationsView.swift */; };
 		2D783E152AAE4E390023B9D9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D783E142AAE4E390023B9D9 /* Location.swift */; };
+		2D783E1D2AAF4A0A0023B9D9 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D783E172AAF4A0A0023B9D9 /* Rubik-Bold.ttf */; };
+		2D783E1E2AAF4A0A0023B9D9 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D783E182AAF4A0A0023B9D9 /* SIL Open Font License.txt */; };
+		2D783E1F2AAF4A0A0023B9D9 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D783E192AAF4A0A0023B9D9 /* Rubik-Light.ttf */; };
+		2D783E202AAF4A0A0023B9D9 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D783E1A2AAF4A0A0023B9D9 /* Rubik-Medium.ttf */; };
+		2D783E212AAF4A0A0023B9D9 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D783E1B2AAF4A0A0023B9D9 /* Rubik-Black.ttf */; };
+		2D783E222AAF4A0A0023B9D9 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D783E1C2AAF4A0A0023B9D9 /* Rubik-Regular.ttf */; };
+		2D783E252AAF82690023B9D9 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D783E242AAF82690023B9D9 /* LocationsListView.swift */; };
 		2DFB2F762AAD00FC00CB7A8C /* PlacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB2F752AAD00FC00CB7A8C /* PlacesApp.swift */; };
 		2DFB2F7D2AAD00FD00CB7A8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFB2F7C2AAD00FD00CB7A8C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -22,6 +29,14 @@
 		2D783E102AAE4D320023B9D9 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		2D783E122AAE4D7A0023B9D9 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		2D783E142AAE4E390023B9D9 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		2D783E172AAF4A0A0023B9D9 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		2D783E182AAF4A0A0023B9D9 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		2D783E192AAF4A0A0023B9D9 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		2D783E1A2AAF4A0A0023B9D9 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		2D783E1B2AAF4A0A0023B9D9 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		2D783E1C2AAF4A0A0023B9D9 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		2D783E232AAF4A300023B9D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2D783E242AAF82690023B9D9 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		2DFB2F722AAD00FC00CB7A8C /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFB2F752AAD00FC00CB7A8C /* PlacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesApp.swift; sourceTree = "<group>"; };
 		2DFB2F7C2AAD00FD00CB7A8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -38,6 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D783E162AAF4A0A0023B9D9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2D783E172AAF4A0A0023B9D9 /* Rubik-Bold.ttf */,
+				2D783E182AAF4A0A0023B9D9 /* SIL Open Font License.txt */,
+				2D783E192AAF4A0A0023B9D9 /* Rubik-Light.ttf */,
+				2D783E1A2AAF4A0A0023B9D9 /* Rubik-Medium.ttf */,
+				2D783E1B2AAF4A0A0023B9D9 /* Rubik-Black.ttf */,
+				2D783E1C2AAF4A0A0023B9D9 /* Rubik-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		2DFB2F692AAD00FC00CB7A8C = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +85,7 @@
 		2DFB2F742AAD00FC00CB7A8C /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				2D783E232AAF4A300023B9D9 /* Info.plist */,
 				2DFB2F862AAD01E200CB7A8C /* Resources */,
 				2DFB2F842AAD01C800CB7A8C /* Models */,
 				2DFB2F852AAD01D100CB7A8C /* ViewModels */,
@@ -79,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2D783E122AAE4D7A0023B9D9 /* LocationsView.swift */,
+				2D783E242AAF82690023B9D9 /* LocationsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +132,7 @@
 		2DFB2F862AAD01E200CB7A8C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D783E162AAF4A0A0023B9D9 /* Fonts */,
 				2D783E0E2AAE14D20023B9D9 /* LocationsDataService.swift */,
 				2D783E0C2AAE14910023B9D9 /* Assets.xcassets */,
 			);
@@ -167,7 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D783E0D2AAE14910023B9D9 /* Assets.xcassets in Resources */,
+				2D783E222AAF4A0A0023B9D9 /* Rubik-Regular.ttf in Resources */,
+				2D783E1D2AAF4A0A0023B9D9 /* Rubik-Bold.ttf in Resources */,
+				2D783E1F2AAF4A0A0023B9D9 /* Rubik-Light.ttf in Resources */,
+				2D783E212AAF4A0A0023B9D9 /* Rubik-Black.ttf in Resources */,
+				2D783E202AAF4A0A0023B9D9 /* Rubik-Medium.ttf in Resources */,
 				2DFB2F7D2AAD00FD00CB7A8C /* Preview Assets.xcassets in Resources */,
+				2D783E1E2AAF4A0A0023B9D9 /* SIL Open Font License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +218,7 @@
 				2DFB2F762AAD00FC00CB7A8C /* PlacesApp.swift in Sources */,
 				2D783E132AAE4D7A0023B9D9 /* LocationsView.swift in Sources */,
 				2D783E0F2AAE14D20023B9D9 /* LocationsDataService.swift in Sources */,
+				2D783E252AAF82690023B9D9 /* LocationsListView.swift in Sources */,
 				2D783E152AAE4E390023B9D9 /* Location.swift in Sources */,
 				2D783E112AAE4D320023B9D9 /* LocationsViewModel.swift in Sources */,
 			);
@@ -314,6 +352,7 @@
 				DEVELOPMENT_TEAM = A6776W2UML;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Places/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +382,7 @@
 				DEVELOPMENT_TEAM = A6776W2UML;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Places/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
