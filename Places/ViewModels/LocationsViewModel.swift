@@ -52,7 +52,25 @@ class LocationsViewModel: ObservableObject {
     func changeLocation(location: Location) {
         withAnimation(.spring()) {
             mapLocation = location
-            showLocationsListView.toggle()
+            showLocationsListView = false
         }
+    }
+    
+    func nextButtonTapped() {
+        guard let currentIndex = locations.firstIndex(where: { $0 == mapLocation }) else {
+            print("no current index")
+            return
+        }
+        
+        let nextIndex = currentIndex + 1
+        
+        guard locations.indices.contains(nextIndex) else {
+            guard let firstLocation = locations.first else {
+                return
+            }
+            changeLocation(location: firstLocation)
+            return
+        }
+        changeLocation(location: locations[nextIndex])
     }
 }

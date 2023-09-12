@@ -14,11 +14,11 @@ struct LocationsView: View {
 
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $viewModel.mapRegion)
-                .ignoresSafeArea()
+            mapLayer
             VStack(spacing: 0) {
                 header
                 Spacer()
+                locationPreviewStack
             }
         }
     }
@@ -54,15 +54,44 @@ extension LocationsView {
                     }
             }
             if viewModel.showLocationsListView {
-                
                 LocationsListView()
             }
         }
-        
         .background(.ultraThinMaterial)
         .cornerRadius(12)
         .shadow(color: .black.opacity(0.3), radius: 12, x: 0, y:12)
         .padding()
         
+    }
+    
+    private var mapLayer: some View {
+        Map(coordinateRegion:$viewModel.mapRegion,
+            annotationItems: viewModel.locations) { location in
+            MapAnnotation(coordinate: location.coordinates) {
+                withAnimation(.spring()) {
+                    LocationAnnotationView()
+                        .scaleEffect(location == viewModel.mapLocation ? 1 : 0.7)
+                        .shadow(radius: 10)
+                        .onTapGesture {
+                            viewModel.changeLocation(location: location)
+                        }
+                }
+            }
+        }
+        .ignoresSafeArea()
+    }
+    
+    private var locationPreviewStack: some View {
+        ZStack {
+            ForEach(viewModel.locations) { location in
+                if location == viewModel.mapLocation {
+                    LocationsPreviewView(location: location)
+                        .padding()
+                        .transition(.asymmetric(
+                            insertion: .move(edge: .trailing),
+                            removal: .move(edge: .leading)))
+                }
+            }
+        }
     }
 }

@@ -65,6 +65,17 @@ class LocationsDataService {
                 "paris-louvre-3",
             ],
             link: "https://en.wikipedia.org/wiki/Louvre"),
+        Location(
+            name: "Ichan Kala",
+            cityName: "Khorezm",
+            coordinates: CLLocationCoordinate2D(latitude: 41.3794, longitude: 60.3579),
+            description: "The old town retains more than 50 historic monuments and 250 old houses, dating primarily from the eighteenth or nineteenth centuries. Juma Mosque, for instance, was established in the tenth century and rebuilt from 1788 to 1789, although its celebrated hypostyle hall still retains 112 columns taken from ancient structures.",
+            imageNames: [
+                "ichan-kala-1",
+                "ichan-kala-2",
+                "ichan-kala-3",
+            ],
+            link: "https://en.wikipedia.org/wiki/Itchan_Kala")
     ]
     
 }

@@ -22,6 +22,7 @@ struct LocationsListView: View {
                 .listRowBackground(Color.clear)
             }
         }
+        .scrollIndicators(.hidden)
         .listStyle(PlainListStyle())
     }
 }
