@@ -22,6 +22,7 @@ struct LocationsPreviewView: View {
                 learnMoreButton
                 nextButton
             }
+            
         }
         .padding(20)
         .background(

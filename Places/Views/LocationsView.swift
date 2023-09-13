@@ -11,14 +11,18 @@ import MapKit
 struct LocationsView: View {
     
     @EnvironmentObject private var viewModel: LocationsViewModel
+    
+    @State var maxWithforiPad: CGFloat = 700
 
     var body: some View {
         ZStack {
             mapLayer
             VStack(spacing: 0) {
                 header
+                    
                 Spacer()
                 locationPreviewStack
+                    
             }
         }
         .sheet(item: $viewModel.sheetLocation) { location in
@@ -56,8 +60,10 @@ extension LocationsView {
                                 degrees: viewModel.showLocationsListView ? 180 : 0))
                     }
             }
+            .frame(maxWidth: maxWithforiPad)
             if viewModel.showLocationsListView {
                 LocationsListView()
+                    .frame(maxWidth: maxWithforiPad)
             }
         }
         .background(.ultraThinMaterial)
@@ -90,6 +96,8 @@ extension LocationsView {
                 if location == viewModel.mapLocation {
                     LocationsPreviewView(location: location)
                         .padding()
+                        .frame(maxWidth: maxWithforiPad)
+                        .frame(maxWidth: .infinity)
                         .transition(.asymmetric(
                             insertion: .move(edge: .trailing),
                             removal: .move(edge: .leading)))
